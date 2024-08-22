@@ -1,0 +1,90 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-size: 62.5%;
+  background-color: #fff0f0f0;
+}
+
+main{
+  background-color: #fcf8f5;
+  margin: 2.5% 5%;
+  padding: 2.5% 5%;
+  box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.19),-10px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  
+}
+
+.column-container{
+  display: flex;
+  justify-content: space-between;
+
+}
+.main-container, 
+  .cart-container {
+  flex-flow: column;
+}
+
+.main-container {
+  max-width: 65%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.main-container > section{
+  flex-direction: row wrap;
+  width: 30%;
+}
+
+.main-container > section > h2{
+  display: block;
+  font-size: 0.75rem;
+}
+
+img{
+  max-width: 100%;
+}
+
+main h1{
+  display: inline-block;
+  font-weight:900
+}
+
+.cart-container{
+  display: flex;
+  flex-flow: column wrap;
+  width: 25%;
+}
+
+button{
+  display: inline-block;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
