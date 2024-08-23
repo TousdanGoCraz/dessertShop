@@ -24,6 +24,7 @@
 body {
   font-size: 62.5%;
   background-color: #fff0f0f0;
+  font-family: 'Red Hat Text';
 }
 
 main{
@@ -50,6 +51,7 @@ main{
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: baseline;
+  margin-right: 15px;
 }
 
 .main-container > section{
@@ -74,12 +76,30 @@ main h1{
 .cart-container{
   display: flex;
   flex-flow: column wrap;
-  width: 25%;
+  width: 35%;
+  background-color: white;
+  height:fit-content;
+  position: relative;
+  bottom: 50px;
+  padding: 2.5%;
 }
 
-button{
-  display: inline-block;
+.cart-container header h2{
+  color: red;
+  font-size: 1.5rem;
 }
+
+.main-container button{
+  display: inline-block;
+  position: relative;
+  bottom:  1rem;
+  left: 30%;
+}
+
+.main-child{
+  position: relative;
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
